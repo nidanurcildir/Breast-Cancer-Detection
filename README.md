@@ -1,35 +1,34 @@
-🧠 AI-Powered Breast Cancer Diagnosis System
-🌟 Proje Özeti
-Meme kanseri teşhisi için geliştirilmiş makine öğrenimi modeli. Wisconsin veri seti üzerinde %97 doğruluk oranıyla çalışan lojistik regresyon tabanlı akıllı tanı sistemi.
+# 🩺 AI-Powered Breast Cancer Diagnosis
 
-📊 Temel Özellikler
-🏥 Klinik Destek: Hekimlere yardımcı tanı aracı
+## 📌 Proje Hakkında
+**Wisconsin Meme Kanseri Veri Seti** kullanılarak geliştirilen makine öğrenimi modeli. Lojistik regresyon ile %97 doğruluk oranına ulaşılmıştır.
 
-⚡ Hızlı Analiz: Anında tümör sınıflandırması
+```python
+# Örnek Kod
+from sklearn.linear_model import LogisticRegression
 
-📈 Yüksek Doğruluk: 30 özellikle optimize edilmiş model
-
-⚖️ Dengeli Tahmin: Sınıf ağırlıklandırmasıyla güvenilirlik
-
-🛠 Teknik Detaylar
-python
-# Örnek Kod Snippet
-model = LogisticRegression(class_weight='balanced')
+model = LogisticRegression(class_weight='balanced', max_iter=1000)
 model.fit(X_train, y_train)  # 97% accuracy
-📌 Kullanılan Teknolojiler
+
+🛠 Teknoloji Yığını
 Kategori	Teknolojiler
-🐍 Dil	Python 3.11
-📊 Veri Bilimi	pandas, numpy
-🤖 ML	scikit-learn
-📈 Görselleştirme	matplotlib, seaborn
-🚀 Başlarken
-bash
-git clone https://github.com/[kullanıcı-adı]/meme-kanseri-teshisi.git
-cd meme-kanseri-teshisi
+Programlama Dili	Python 3.11
+Veri İşleme	pandas, numpy
+Makine Öğrenimi	scikit-learn
+Görselleştirme	matplotlib, seaborn
+
+🚀 Kurulum
+git clone https://github.com/nidanurcildir/Breast-Cancer-Detection.git
+cd Breast-Cancer-Detection
 pip install -r requirements.txt
-📂 Veri Seti Özellikleri
-569 hasta kaydı (212 malign, 357 benign)
 
-30 radyolojik özellik
+📊 Veri Seti
+Toplam Örnek: 569 (212 kötü huylu, 357 iyi huylu)
+Özellik Sayısı: 30 radyolojik parametre
+Veri Kaynağı: Scikit-learn gömülü veri seti
 
-Tamamen anonimleştirilmiş veriler
+✨ Öne Çıkanlar
+Sınıf dengesizliği optimizasyonu
+Cross-validation ile model stabilitesi
+Özellik önem analizi
+Kapsamlı görselleştirmeler
