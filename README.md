@@ -11,15 +11,15 @@ model = LogisticRegression(class_weight='balanced', max_iter=1000)
 model.fit(X_train, y_train)  # 97% accuracy
 
 🛠 Teknoloji Yığını
-Kategori	Teknolojiler
-Programlama Dili	Python 3.11
-Veri İşleme	pandas, numpy
-Makine Öğrenimi	scikit-learn
-Görselleştirme	matplotlib, seaborn
+   Kategori	        Teknolojiler
+Programlama Dili	  Python 3.11
+Veri İşleme	        pandas, numpy
+Makine Öğrenimi	    scikit-learn
+Görselleştirme	    matplotlib, seaborn
 
 🚀 Kurulum
-git clone https://github.com/nidanurcildir/Breast-Cancer-Detection.git
-cd Breast-Cancer-Detection
+git clone https://github.com/nidanurcildir/breast-cancer-detection.git
+cd breast-cancer-detection
 pip install -r requirements.txt
 
 📊 Veri Seti
